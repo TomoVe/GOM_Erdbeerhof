@@ -1,0 +1,122 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	list-style:none;
+	text-decoration:none;
+}
+
+header {
+	background-color:#929292;
+	background-color: #F4F4F4;
+	width: 100%;
+	float: left;
+}
+
+#logo {
+	color: white;
+	background-color: #F4F4F4;		
+	display: block;
+	padding: 0.5em;
+	text-decoration: none;
+	float: left;
+}
+
+#logo {
+	width: auto;
+}
+
+#nav_toggle a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+	background-color: #7EE57E;
+}
+	
+.menue-button {
+	display: none;
+}
+		
+#nav_toggle {
+	float:right;
+}
+
+#nav_toggle li {
+	list-style: none;
+	float: left;
+	display: inline-block;
+}
+
+#nav_toggle a:hover {
+	color: black;
+	background: #58A058;
+}
+	
+	
+@media only screen and (max-width:600px) {
+	.menue-button {
+		display: block;
+	}
+	
+	.menue-button {
+		background-color: #7EE57E;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: 0.5em;
+		color: white;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	
+	#logo {
+		width: 100%;
+	}
+	
+	#nav_toggle {
+		float: left;
+		width: 100%;
+		display: none;
+	}
+	
+	#nav_toggle li {
+		width: 100%;
+		margin:2px;
+	}
+	
+	.menue-button:hover {
+		color: black;
+		background: #58A058;
+	}
+}
+
+
+#nav-menue:target #nav_toggle {
+	display: block;
+}
+
+#nav-menue:target .menue-button-open {
+	display: none; 
+}	
+
+section {
+	padding: 0.5em;
+	float: left;
+	width: 100%;
+}
+
+
+
+h1, p {
+	margin: 5px;
+}
+
+img{
+	width:10%;
+}
