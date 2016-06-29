@@ -13,29 +13,51 @@ header {
 	background-color: #F4F4F4;
 	width: 100%;
 	float: left;
+	background-image: url('images/Erdbeere_5.jpg');
+	background-repeat: no-repeat;
+}
+
+#head_elements{
+	max-height:250px;
+}
+
+#sidebar{
+	float:left;
+	width:20%;
+	padding: 0.8em;
+	font-size: 0.9em;
+	background-color: #F4F4F4;
+	height: 100%;
+	margin-left: 1%;
+}
+
+#main_content{
+	float:right;
+	width:75%;
+	background-color: #F4F4F4;
+	margin-top:1em;
+	height: 100%;
 }
 
 #logo {
-	color: white;
-	background-color: #F4F4F4;		
 	display: block;
-	padding: 0.5em;
-	text-decoration: none;
-	float: left;
-}
-
-#logo {
-	width: auto;
+	padding: 0.8em;
+	margin-left: 0.5em;
+	padding: 0;
+	max-height: 220px;
 }
 
 #nav_toggle a {
 	display: block;
 	height: 100%;
-	width: 100%;
+	width: 100px;
 	padding: 10px;
+	margin: 0.3em;
 	text-decoration: none;
+	text-align: center;
 	color: white;
 	background-color: #7EE57E;
+	border: 1px solid white;
 }
 	
 .menue-button {
@@ -44,6 +66,7 @@ header {
 		
 #nav_toggle {
 	float:right;
+	
 }
 
 #nav_toggle li {
@@ -69,11 +92,23 @@ header {
 		position: absolute;
 		right: 0;
 		top: 0;
-		padding: 0.5em;
+		padding: 0.8em;
 		color: white;
 		cursor: pointer;
 		text-decoration: none;
+		border: 1px solid white;
 	}
+	
+	#nav_toggle a {
+		display: block;
+		height: 100%;
+		width: 100%;
+		padding: 10px;
+		margin: 0.2em;
+		text-decoration: none;
+		color: white;
+		background-color: #7EE57E;
+}
 	
 	#logo {
 		width: 100%;
@@ -87,12 +122,19 @@ header {
 	
 	#nav_toggle li {
 		width: 100%;
-		margin:2px;
 	}
 	
 	.menue-button:hover {
 		color: black;
 		background: #58A058;
+	}
+	
+	#sidebar{
+		display:none;
+	}
+	
+	#main_content{
+		width:100%;
 	}
 }
 
@@ -105,18 +147,16 @@ header {
 	display: none; 
 }	
 
-section {
-	padding: 0.5em;
-	float: left;
-	width: 100%;
-}
-
-
-
 h1, p {
 	margin: 5px;
 }
 
-img{
-	width:10%;
+
+#logo_img{
+	width:20%;
+	background-color: #F4F4F4;
+	padding: 0.8em;
+	margin: 0;
+	max-height: 208px;
+	max-width: 208px;
 }
