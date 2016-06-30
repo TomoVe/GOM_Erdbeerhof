@@ -51,58 +51,52 @@
 		</div>
 		
 		<div id="main_content">
-			<h1>News</h1>
-			<h2>30 Jahre!</h2>
-			<p class="entry-date">01. Juni 2016</p>
+			<h1>Kontakt-Formular</h1>
 			<p>
-				Liebe Kundinnen und Kunden,
+				Sie haben Fragen? Schicken sie uns einfach eine Nachricht
+				über unser Kontakt-Formular!
 			</p>
-			<p>
-				dank Ihrer und eurer Treue starten wir in diesem Jahr bereits in die 30. gemeinsame Erdbeersaison.
-				Wir freuen uns, Ihnen und euch täglich frische Erdbeeren anbieten zu können. Alle unsere Verkaufsstände sowie die Selbstpflückfelder haben geöffnet.
-				Eine Übersicht unserer Verkaufsstände finden Sie und ihr hier auf unserer Homepage. Auch weitere Informationen zu unseren Selbstpflückfeldern finden Sie hier.
-			</p>
-			<p>
-				Sollten Sie oder ihr Lust haben, Teil unseres Teams zu werden, dann einfach hier über unsere Homepage Kontakt mit uns aufnehmen.
-			</p>
-			<p>
-				Wir freuen uns auf eine leckere und sonnige Erdbeer-Saison mit Ihnen und euch,
-			</p>
-			<p>
-				Ihr und euer
-			</p>
-			<p class="unterschrift">
-				Timm's Erdbeerhof
-			</p>
-
-
-			<h2>Der große Erdbeercheck - die rote Wundernuss zum Selberpflücken</h2>
-            <p class="entry-date">10. Mai 2015</p>
-            <p>
-				Pünktlich zum Start der Selbstpflücksaison 2015 hatten wir Besuch vom shz-Team. Wir freuen uns, Ihnen den daraus entstandenen Video-Clip exklusiv auf unserer Homepage zeigen zu können.
-            </p>
-			<center><iframe width="500" height="315"
-            src="http://www.youtube.com/embed/VpUQ0UouxjA">
-            </iframe></center>
-			<p>
-				Viel Spaß beim Anschauen und guten Appetit wünscht
-            </p>
-			<p>
-				Ihr und Euer
-            </p>
-            <p class="unterschrift">Timm's Erdbeerhof</p>
-
-            
-
-			<h2>Überschrift</h2>
-            <p class="entry-date">30. April 2016</p>
-            <p>
-				Text
-			</p>
-            <p>
-				Ihr und Euer
-            </p>
-            <p class="unterschrift">Timm's Erdbeerhof</p>
+			<div id="formular_liste">
+				<form method="post" 
+					  action="http://www.inf.fh-flensburg.de/echo/"
+					  accept-charset="utf-8"
+					  enctype="multipart/form-data">
+					<ul>
+						<li>
+							<label class="kontakt_label">Anrede:</label>
+							<input type="radio" name="anrede" value="herr" checked="checked" />
+							<label for="anrede_herr">Herr</label>
+							<input type="radio" name="anrede" value="frau" />
+							<label for="anrede_frau">Frau</label>
+						</li>
+						<li>
+							<label class="kontakt_label" for="vorname">Vorname:</label>
+							<input class="kontakt_input" type="text" name="vorname" id="vorname" value="" />
+						</li>
+						<li>
+							<label class="kontakt_label" for="nachname">Nachname:</label>
+							<input class="kontakt_input" type="text" name="nachname" id="nachname" value="" />
+						</li>
+						<li>
+							<label class="kontakt_label" for="email">E-Mail:</label>
+							<input class="kontakt_input" type="text" name="email" id="email" value="" />
+						</li>
+						<li>
+							<label class="kontakt_label" for="betreff">Betreff:</label>
+							<input class="kontakt_input" type="text" name="betreff" id="betreff" value="" />
+						</li>
+						<li>
+							<label class="kontakt_label" for="mitteilung">Mitteilung:</label>
+							<textarea class="kontakt_input" name="mitteilung" id="mitteilung" style="height:80px"></textarea>
+						</li>
+						<li>
+							<input class="submit" type="submit" name="senden" id="senden" value="Senden" />
+						</li>
+					</ul>
+				</form>
+			</div>
+			<img id="kontakt_bild" src="images/Erdbeere_1_icon.png">
+		
 		<!--Ende-DIV-main_content-->
 		</div>
 		<div id="main_fill"></div>
