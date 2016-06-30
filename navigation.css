@@ -9,11 +9,18 @@
 	text-decoration:none;
 }
 
+html, body{
+	margin:0 auto;
+	padding: 0;
+	background-color:#CDD8CD;
+	height:100%;
+}
+
 header {
 	background-color:#929292;
 	background-color: #F4F4F4;
 	width: 100%;
-	min-height: 400px;
+	min-height: 335px;
 
 	background-image: url('images/Erdbeere_5.jpg');
 	background-repeat: no-repeat;
@@ -21,12 +28,10 @@ header {
 
 #headline{
 	background-color:white;
-	margin: 0 0 0 0;
 	width: auto;
 	padding: 0.5em;
 	background-color: #F4F4F4;
-	opacity: 1;
-
+	min-height:100px;
 }
 
 #headline_small{
@@ -39,6 +44,8 @@ header {
 	font-weight: 600;
 	color: #590202;
 	margin: 0;
+	width:100%;
+	text-align:center;
 }
 
 #logo_img{
@@ -48,30 +55,41 @@ header {
 	max-height: 208px;
 	max-width: 208px;
 	float:left;
+	margin-left:1%;
 }
 
 #logo {
 	display: block;
 	max-height: 200px;
-	margin-left: 1%;
-	opacity: 1;
+}
+
+#main{
+	max-width:960px;
+	margin: 0 auto;
+	background-color: #F4F4F4;
+}
+
+#main_fill{
+	clear:both;
+	height:100%;
+	background-color: #F4F4F4;
 }
 
 #sidebar{
 	float:left;
 	width:20%;
 	max-width:208px;
-	margin-left: 1%;
-	padding: 0.8em;
-
+	margin-left: 0.8em;
+	padding:1%;
 	background-color: #F4F4F4;
 }
 
 #main_content{
-	margin-left: 1%;
 	margin-right: 1%;
-	padding:1%;
+	margin-left:23%;
+	padding: 1%;
 	background-color: #F4F4F4;
+	width:auto;
 }
 
 #main_content p{
@@ -100,8 +118,7 @@ header {
 	display:block;
 	vertical-align: bottom;
 	margin-bottom:0;
-
-	
+	margin-right: 1%;
 }
 
 #nav_toggle li {
@@ -115,6 +132,14 @@ header {
 	background: #58A058;
 }
 
+footer{
+	clear:both;
+	width:100%;
+	background-color: #F4F4F4;
+	border-top: 1px solid black;
+	text-align:center;
+}
+
 
 @media only screen and (max-width:600px) {
 	.menue-button {
@@ -126,12 +151,16 @@ header {
 		display: block;
 		position:absolute;
 		right: 0;
-		top: 0;
 		padding: 0.8em;
 		color: white;
 		cursor: pointer;
 		text-decoration: none;
 		border: 1px solid white;
+	}
+	
+	#main_content{
+		width: 100%;
+		margin:0;
 	}
 
 	#nav_toggle a {
@@ -161,7 +190,7 @@ header {
 	
 	#headline_small p{
 		font-family: 'Dancing Script', cursive;
-		font-size: 36pt;
+		font-size: 38pt;
 		font-weight: 600;
 		color: #590202;
 		margin: 0;
