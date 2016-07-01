@@ -3,53 +3,65 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Navigations Beispiel</title>
+		<title>Timms Erdbeerhof - Infos</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
 
 <body>
 
 	<header id="nav-menue">
-		<a href="#" id="logo"><img id="logo_img" src="images/logo.png"></a>
+		<div id="logo_container">
+			<a href="#" id="logo">
+				<img id="logo_img" src="images/logo.png">
+			</a>
+		</div>
 		<div id="headline"><p>Timms Erdbeerhof</p></div>
-		<div id="headline_small"><p>Timms Erdbeerhof</p></div>
 		<nav id="nav_toggle" role="navigation">
 			<ul>
-			   <li><a href="index.html">Startseite</a></li>
-			   <li><a href="infos.html">Infos</a></li>
-			   <li><a href="ueberuns.html">Über Uns</a></li>
-			   <li><a href="kontakt.html">Kontakt</a></li>
+				 <li><a href="index.html">Startseite</a></li>
+				 <li><a href="infos.html">Infos</a></li>
+				 <li><a href="ueberuns.html">Über Uns</a></li>
+				 <li><a href="erdbeere.html">Erdbeere</a></li>
+				 <li><a href="kontakt.html">Kontakt</a></li>
 			</ul>
 		</nav>
-		<a class="menue-button menue-button-close" 
+		<a class="menue-button menue-button-close"
 		   href="#nav-menue-zu">Menü</a>
-		<a class="menue-button menue-button-open" 
+		<a class="menue-button menue-button-open"
 		   href="#nav-menue">Menü</a>
 	</header>
-	
+
 	<div id="main">
 		<div id="sidebar">
-			<p>Sidebarstuff</p>
-			<p>
-				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
-				nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-				sed diam voluptua. At vero eos et accusam et justo duo dolores et ea 
-				rebum.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
-				nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-				sed diam voluptua. At vero eos et accusam et justo duo dolores et ea 
-				rebum.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
-				nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-				sed diam voluptua. At vero eos et accusam et justo duo dolores et ea 
-				rebum.
-			</p>
+			<div id="sidebar_stand">
+				<h3>Unsere Stände:</h3>
+
+					<ul>
+						<li>Flensburg</li>
+						<li>Gelting</li>
+						<li>Husby</li>
+						<li>Kappeln</li>
+						<li>Langballig</li>
+						<li>Rieseby</li>
+						<li>Satrup</li>
+						<li>Schleswig</li>
+						<li>Steinbergkirche</li>
+						<li>Süderbrarup</li>
+						<li>Vogelsang-Grünholz</li>
+						<li>Wees</li>
+					</ul>
+					<p class="zeit">
+					<a href="infos.html">Öffnungszeiten</a>
+					</p>
+			</div>
+				<div id="sidebar_suche">
+					<h3>Wir suchen!</h3>
+						<p>
+						Wir sind aktuell auf der Suche nach Mitarbeitern für Verkauf und Ernte! Hier geht's zum <a href="kontakt.html">Kontaktformular</a></li>
+						</p>
+				</div>
 		</div>
-		
+
 		<div id="main_content">
 			<h2>Unsere Felder</h2>
 			<img id="feld_1" src="images/feld_1.png" alt="Erdbeerfeld in Koppelheck">
@@ -64,17 +76,14 @@
 				Probieren Sie auch unsere weiteren Produktangebote, wie Erdbeermarmelade, Erdbeersekt und vieles mehr!
 			<p class="time">
 				Montag - Samstag
-			</p>
-			<p>
+			<br>
 				8.00 - 18.00 Uhr
 			</p>
 			<p>
 				Koppelheck
-			</p>
-			<p>
+			<br>
 				Nordstraße &#40;B199&#41;
-			</p>
-			<p>
+			<br>
 				24395 Niesgrau
 			</p>
 			<p>
@@ -82,17 +91,14 @@
 			</p>
 			<p class="time">
 				Montag - Samstag
-			</p>
-			<p>
+			<br>
 				8.00 - 18.00 Uhr
 			</p>
 			<p>
 				Ausacker
-			</p>
-			<p>
+			<br>
 				Direkt an der K90
-			</p>
-			<p>
+			<br>
 				24975 Ausacker
 			</p>
 			<p>
@@ -101,357 +107,323 @@
 			</p>
 
 			<h2>Unsere Stände</h2>
-			<p>
-				Unsere frisch gepflückte Ware erhalten Sie nicht nur an unseren beiden Feldern in Koppelheck und Ausacker sondern auch an unseren Verkaufsständen hier in unserer Region.
-			</p>
-			<img id="stand_1" src="images/stand_1.png" alt="Erdbeerfeld in Koppelheck">
-			<p>
-				An folgenden Orten finden Sie unsere Verkaufsstände (klicken Sie auf eine Checkbox, um weitere Informationen zu erhalten):
-			</p>
+				<img id="stand_1" src="images/stand_1.png" alt="Erdbeerfeld in Koppelheck">
+				<p>
+					Unsere frisch gepflückte Ware erhalten Sie nicht nur an unseren beiden Feldern in Koppelheck und Ausacker sondern auch an unseren Verkaufsständen hier in unserer Region.
+				</p>
 
-			<input type="checkbox" class="info_erweitern" /> Flensburg
+				<p>
+					An folgenden Orten finden Sie unsere Verkaufsstände (Für Info klicken):
+				</p>
+
+			<input type="checkbox" class="info_erweitern" /> Flensburg, Waldstraße
 			<div class="anzeigen">
-			<p class="time">
-				Montag - Samstag
-			</p>
-			<p>
-				8.00 - 18.00 Uhr
-			</p>
-			<p>
-				Sky Supermarkt
-			</p>
-			<p>
-				Waldstraße 24
-			</p>
-			<p>
-				24939 Flensburg
-			</p>
+				<p class="time">
+					Montag - Samstag
+				<br>
+					8.00 - 18.00 Uhr
+				</p>
+				<p>
+					Sky Supermarkt
+				<br>
+					Waldstraße 24
+				<br>
+					24939 Flensburg
+				</p>
 			</div>
 			<br>
-			<input type="checkbox" class="info_erweitern" /> Flensburg, zweiter Standort
+			<input type="checkbox" class="info_erweitern" /> Flensburg, Große Straße
 			<div class="anzeigen">
-			<p class="time">
-				Montag - Samstag
-			</p>
-			<p>
-				9.00 - 17.30 Uhr
-			</p>
-			<p>
-				Große Straße
-			</p>
-			<p>
-				Nahe der St. Marien Kirche
-			</p>
-			<p>
-				24937 Flensburg
-			</p>
+				<p class="time">
+					Montag - Samstag
+				<br>
+					9.00 - 17.30 Uhr
+				</p>
+				<p>
+					Große Straße
+				<br>
+					Nahe der St. Marien Kirche
+				<br>
+					24937 Flensburg
+				</p>
 			</div>
 			<br>
 			<input type="checkbox" class="info_erweitern" /> Gelting
 			<div class="anzeigen">
-			<p class="time">
-				Montag - Samstag
-			</p>
-			<p>
-				8.00 - 18.00 Uhr
-			</p>
-			<p>
-				Sonntag
-			</p>
-			<p>
-				12.00 - 18.00 Uhr
-			</p>
-			<p>
-				Nahversorgungszentrum
-			</p>
-			<p>
-				24395 Gelting
-			</p>
+				<p class="time">
+					Montag - Samstag
+				<br>
+					8.00 - 18.00 Uhr
+				</p>
+				<p class="time">
+					Sonntag
+				<br>
+					12.00 - 18.00 Uhr
+				</p>
+				<p>
+					Nahversorgungszentrum
+				<br>
+					24395 Gelting
+				</p>
 			</div>
 			<br>
 			<input type="checkbox" class="info_erweitern" /> Husby
 			<div class="anzeigen">
-			<p class="time">
-				Montag - Freitag
-			</p>
-			<p>
-				8.00 - 18.00 Uhr
-			</p>
-			<p>
-				Samstag
-			</p>
-			<p>
-				7.30 - 16.00 Uhr
-			</p>
-			<p>
-				Nah &amp; Frisch
-			</p>
-			<p>
-				Flensburger Str. 58
-			</p>
-			<p>
-				24975 Husby
-			</p>
+				<p class="time">
+					Montag - Freitag
+				<br>
+					8.00 - 18.00 Uhr
+				</p>
+				<p class="time">
+					Samstag
+				<br>
+					7.30 - 16.00 Uhr
+				</p>
+				<p>
+					Nah &amp; Frisch
+				<br>
+					Flensburger Str. 58
+				<br>
+					24975 Husby
+				</p>
 			</div>
 			<br>
 			<input type="checkbox" class="info_erweitern" /> Kappeln
 			<div class="anzeigen">
-			<p class="time">
-				Montag - Freitag
-			</p>
-			<p>
-				8.30 - 18.00 Uhr
-			</p>
-			<p>
-				Samstag
-			</p>
-			<p>
-				8.30 - 16.00 Uhr
-			</p>
-			<p>
-				Sonntag
-			</p>
-			<p>
-				11.00 - 17.00 Uhr
-			</p>
-			<p>
-				Rathausmarkt - Fußgängerbereich
-			</p>
-			<p>
-				24376 Kappeln
-			</p>
-			</div>
+				<p class="time">
+					Montag - Freitag
+				<br>
+					8.30 - 18.00 Uhr
+				</p>
+				<p class="time">
+					Samstag
+				<br>
+					8.30 - 16.00 Uhr
+				</p>
+				<p class="time">
+					Sonntag
+				<br>
+					11.00 - 17.00 Uhr
+				</p>
+				<p>
+					Rathausmarkt - Fußgängerbereich
+				<br>
+					24376 Kappeln
+				</p>
+				</div>
 			<br>
 			<input type="checkbox" class="info_erweitern" /> Langballig
 			<div class="anzeigen">
-			<p class="time">
-				Montag - Samstag
-			</p>
-			<p>
-				8.00 - 18.00 Uhr
-			</p>
-			<p>
-				Sonntag
-			</p>
-			<p>
-				12.00 - 18.00 Uhr
-			</p>
-			<p>
-				Edeka
-			</p>
-			<p>
-				Schwarze Straße 19
-			</p>
-			<p>
-				24977 Langballig
-			</p>
+				<p class="time">
+					Montag - Samstag
+				<br>
+					8.00 - 18.00 Uhr
+				</p>
+				<p class="time">
+					Sonntag
+				<br>
+					12.00 - 18.00 Uhr
+				</p>
+				<p>
+					Edeka
+				<br>
+					Schwarze Straße 19
+				<br>
+					24977 Langballig
+				</p>
 			</div>
 			<br>
 			<input type="checkbox" class="info_erweitern" /> Rieseby
 			<div class="anzeigen">
-			<p class="time">
-				Montag - Freitag
-			</p>
-			<p>
-				8.00 - 18.00 Uhr
-			</p>
-			<p>
-				Samstag
-			</p>
-			<p>
-				7.30 - 16.00 Uhr
-			</p>
-			<p>
-				Edeka
-			</p>
-			<p>
-				Dorfstr. 12
-			</p>
-			<p>
-				24354 Rieseby
-			</p>
+				<p class="time">
+					Montag - Freitag
+				<br>
+					8.00 - 18.00 Uhr
+				</p>
+				<p class="time">
+					Samstag
+				<br>
+					7.30 - 16.00 Uhr
+				</p>
+				<p>
+					Edeka
+				<br>
+					Dorfstr. 12
+				<br>
+					24354 Rieseby
+				</p>
 			</div>
 			<br>
 			<input type="checkbox" class="info_erweitern" /> Satrup
 			<div class="anzeigen">
-			<p class="time">
-				Montag - Freitag
-			</p>
-			<p>
-				8.00 - 18.00 Uhr
-			</p>
-			<p>
-				Samstag
-			</p>
-			<p>
-				8.00 - 12.00 Uhr
-			</p>
-			<p>
-				Bäckerei Bahnsen
-			</p>
-			<p>
-				Flensburger Straße 10
-			</p>
-			<p>
-				24986 Mittelangeln
-			</p>
+				<p class="time">
+					Montag - Freitag
+				<br>
+					8.00 - 18.00 Uhr
+				</p>
+				<p class="time">
+					Samstag
+				<br>
+					8.00 - 12.00 Uhr
+				</p>
+				<p>
+					Bäckerei Bahnsen
+				<br>
+					Flensburger Straße 10
+				<br>
+					24986 Mittelangeln
+				</p>
 			</div>
 			<br>
-			<input type="checkbox" class="info_erweitern" /> Schleswig
+			<input type="checkbox" class="info_erweitern" /> Schleswig, Stadtweg
 			<div class="anzeigen">
-			<p class="time">
-				Montag - Freitag
-			</p>
-			<p>
-				9.00 - 17.30 Uhr
-			</p>
-			<p>
-				Samstag
-			</p>
-			<p>
-				9.00 - 16.00 Uhr
-			</p>
-			<p>
-				Stadtweg 27a
-			</p>
-			<p>
-				24837 Schleswig
-			</p>
+				<p class="time">
+					Montag - Freitag
+				<br>
+					9.00 - 17.30 Uhr
+				</p>
+				<p class="time">
+					Samstag
+				<br>
+					9.00 - 16.00 Uhr
+				</p>
+				<p>
+					Stadtweg 27a
+				<br>
+					24837 Schleswig
+				</p>
 			</div>
 			<br>
-			<input type="checkbox" class="info_erweitern" /> Schleswig, zweiter Standort
+			<input type="checkbox" class="info_erweitern" /> Schleswig, Lattenkamp
 			<div class="anzeigen">
-			<p class="time">
-				Montag - Freitag
-			</p>
-			<p>
-				8.30 - 18.00 Uhr
-			</p>
-			<p>
-				Samstag
-			</p>
-			<p>
-				8.30 - 16.00 Uhr
-			</p>
-			<p>
-				Lattenkamp
-			</p>
-			<p>
-				(nahe Lidl, Schuhpark,etc.)
-			</p>
-			<p>
-				24837 Schleswig
-			</p>
+				<p class="time">
+					Montag - Freitag
+				<br>
+					8.30 - 18.00 Uhr
+				</p>
+				<p class="time">
+					Samstag
+				<br>
+					8.30 - 16.00 Uhr
+				</p>
+				<p>
+					Lattenkamp
+				<br>
+					(nahe Lidl, Schuhpark,etc.)
+				<br>
+					24837 Schleswig
+				</p>
 			</div>
 			<br>
 			<input type="checkbox" class="info_erweitern" /> Steinbergkirche
 			<div class="anzeigen">
-			<p class="time">
-				Montag - Sonntag
-			</p>
-			<p>
-				8.00 Uhr, Solange der Vorrat reicht
-			</p>
-			<p>
-				Tankstelle Bruhn
-			</p>
-			<p>
-				Nordstraße 4
-			</p>
-			<p>
-				24972 Steinbergkirche
-			</p>
+				<p class="time">
+					Montag - Sonntag
+				<br>
+					8.00 Uhr, Solange der Vorrat reicht
+				</p>
+				<p>
+					Tankstelle Bruhn
+				<br>
+					Nordstraße 4
+				<br>
+					24972 Steinbergkirche
+				</p>
 			</div>
 			<br>
 			<input type="checkbox" class="info_erweitern" /> Süderbrarup
 			<div class="anzeigen">
-			<p class="time">
-				Montag - Samstag
-			</p>
-			<p>
-				8.00 - 12.00 Uhr
-			</p>
-			<p>
-				Bäckerei Michaelis
-			</p>
-			<p>
-				Große Straße 11
-			</p>
-			<p>
-				24392 Süderbrarup
-			</p>
+				<p class="time">
+					Montag - Samstag
+				<br>
+					8.00 - 12.00 Uhr
+				</p>
+				<p>
+					Bäckerei Michaelis
+				<br>
+					Große Straße 11
+				<br>
+					24392 Süderbrarup
+				</p>
 			</div>
 			<br>
-			<input type="checkbox" class="info_erweitern" /> Süderbrarup, zweiter Standort
+			<input type="checkbox" class="info_erweitern" /> Süderbrarup, Schreibwaren Krambeck
 			<div class="anzeigen">
-			<p class="time">
-				Montag - Samstag
-			</p>
-			<p>
-				8.00 - 18.00 Uhr
-			</p>
-			<p>
-				Schreibwaren Krambeck
-			</p>
-			<p>
-				Große Straße 22
-			</p>
-			<p>
-				24392 Süderbrarup
-			</p>
+				<p class="time">
+					Montag - Samstag
+				<br>
+					8.00 - 18.00 Uhr
+				</p>
+				<p>
+					Schreibwaren Krambeck
+				<br>
+					Große Straße 22
+				<br>
+					24392 Süderbrarup
+				</p>
 			</div>
 			<br>
 			<input type="checkbox" class="info_erweitern" /> Vogelsang-Grünholz
 			<div class="anzeigen">
-			<p class="time">
-				Montag - Freitag
-			</p>
-			<p>
-				8.30 - 18.00 Uhr
-			</p>
-			<p>
-				Samstag
-			</p>
-			<p>
-				8.30 - 13.00 Uhr
-			</p>
-			<p>
-				Edeka
-			</p>
-			<p>
-				Gartenstraße 6
-			</p>
-			<p>
-				24351 Vogelsang-Grünholz
-			</p>
+				<p class="time">
+					Montag - Freitag
+				<br>
+					8.30 - 18.00 Uhr
+				</p>
+				<p class="time">
+					Samstag
+				<br>
+					8.30 - 13.00 Uhr
+				</p>
+				<p>
+					Edeka
+				<br>
+					Gartenstraße 6
+				<br>
+					24351 Vogelsang-Grünholz
+				</p>
 			</div>
 			<br>
 			<input type="checkbox" class="info_erweitern" /> Wees
 			<div class="anzeigen">
-			<p class="time">
-				Montag - Samstag
-			</p>
-			<p>
-				8.30 - 18.00 Uhr
-			</p>
-			<p>
-				Getränkemarkt Hoffmann
-			</p>
-			<p>
-				Birkenbogen 2
-			</p>
-			<p>
-				24999 Wees
-			</p>
+				<p class="time">
+					Montag - Samstag
+				<br>
+					8.30 - 18.00 Uhr
+				</p>
+				<p>
+					Getränkemarkt Hoffmann
+				<br>
+					Birkenbogen 2
+				<br>
+					24999 Wees
+				</p>
 			</div>
 		<!--Ende-DIV-main_content-->
 		</div>
 		<div id="main_fill"></div>
 	</div>
-	
+
 	<footer>
-		<p>Ich bin ein Footer :D</p>
-	</footer>
+        <div id="impressum">
+
+        <ul>
+            <li>
+                Timms Erdbeerhof (Christian Timm)
+            </li>
+            <li>
+                Grünholz 7a
+            </li>
+            <li>
+                24996 Sterup
+            </li>
+        </ul>
+        </div>
+        <div id="impressum_2">
+        <p>Wir suchen Aushilfen! Rufen Sie uns an unter</p>
+        <p>0174/7441687 oder füllen Sie das <a href="kontakt.html">Kontaktformular</a> aus.</p>
+        </div>
+    </footer>
 
 </body>
 
