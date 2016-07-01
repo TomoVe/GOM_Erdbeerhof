@@ -268,15 +268,105 @@ footer{
 
 
 /*NEWS*/
-.page-wrapper { width: 95%; max-width: 1100px; margin: 0 auto 0 2em; position: relative; padding: 6em 0 10em; }
-.header {}
-.inhalt {width: 90%; float: "left";}
-.unterschrift { font-family: 'Dancing Script', cursive; font-weight: 600; font-size: 1.8em; margin: 0 0 2.5em 0.5em; }
-.time {font-size: 110%; font-family: sans-serif; font-weight: 600;margin: 0.5em 0 0 0;}
-h2 { color: #590202; font-size: 20pt; margin-top:1em;}
-h3 { font-family: 'Aclonica', sans-serif; font-size: 14pt; margin-bottom:1em;}
-.platzhalter {font-size: 40pt; }
-.entry-date { font-style: italic; font-size: 10pt; color: #a6a6a6 ; margin: 0; padding: 0;}
+.page-wrapper { 
+	width: 95%; 
+	max-width: 1100px; 
+	margin: 0 auto 0 2em; 
+	position: relative; 
+	padding: 6em 0 10em; 
+}
+.inhalt {
+	width: 90%; 
+	float:left;
+}
+.unterschrift { 
+	font-family: 'Dancing Script', cursive; 
+	font-weight: 600; 
+	font-size: 1.8em; 
+	margin: 0 0 2.5em 0.5em; 
+}
+.time {
+	font-size: 110%; 
+	font-family: sans-serif; 
+	font-weight: 600;
+	margin: 0.5em 0 0 0;
+}
+h2 { 
+	color: #590202; 
+	font-size: 20pt; 
+	margin-top:1em;
+	margin-bottom:1em;
+}
+h3 { 
+	font-family: 'Aclonica', sans-serif; 
+	font-size: 14pt; 
+	margin-bottom:1em;
+	margin-top:1em;
+}
+.platzhalter {
+	font-size: 40pt; 
+}
+.entry-date { 
+	font-style: italic; 
+	font-size: 10pt; 
+	color: #a6a6a6 ; 
+	margin: 0; 
+	padding: 0;
+}
 iframe{
 	width:100%;
+}
+
+/*INFOS*/
+#feld_1{
+	width:33%;
+	height:auto;
+	float:right
+}
+input.info_erweitern {
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+}
+.anzeigen {
+  background-color:white;
+  padding:15px 30px;
+  margin:10px 0px 0px;
+  display:none;
+}
+input.info_erweitern:checked + .anzeigen {
+  display:block;
+}
+#stand_1{
+	width:60%;
+	height:auto;
+	text-align:center;
+	display:block;
+	margin:auto;
+	padding:1%;
+}
+
+/*UEBERUNS*/
+#ueber_uns_1{
+	float:right;
+	width:40%;
+	height:auto;
+}
+#erdbeere_2{
+	width:40%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+#erdbeere_7{
+	width:20%;
+	height:auto;
+	float:left;
+	margin:2%;
+}
+#erdbeere_6{
+	width:30%;
+	height:auto;
+	float:right;
+	margin:2%;
 }
