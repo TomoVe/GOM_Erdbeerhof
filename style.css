@@ -1,12 +1,21 @@
-@import url('http://fonts.googleapis.com/css?family=Open+Sans');
-@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
-@import url(https://fonts.googleapis.com/css?family=Aclonica);
+@font-face{
+    font-family: 'Dancing Script';
+    src: url('fonts/Dancing_Script_regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Aclonica';
+    src: url('fonts/Aclonica_regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Helvetica';
+    src: url('fonts/Helvetica.otf') format('truetype');
+}
 
 
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	text-decoration:none;
 	list-style-position: inside;
 }
@@ -17,8 +26,8 @@ html, body{
 	background-color:#fffad5;
 	height:100%;
 	max-width:960px;
-
 }
+
 
 header {
 	background-color:#929292;
@@ -36,7 +45,8 @@ footer{
     min-height:4em;
     background-color: #F4F4F4;
     border-top: 1px solid #B8B8B8;
-    padding:1em;
+
+    padding: 1em;
     text-align:center;
     font-size:9pt;
     color:#590202;
@@ -89,6 +99,7 @@ footer{
 #main{
 	margin: 0 auto;
 	background-color: #F4F4F4;
+  padding-bottom: 150px;
 }
 
 #main_fill{
@@ -109,6 +120,14 @@ footer{
 	padding:1%;
 }
 
+.news img{
+  height: 35px;
+  width: auto;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
 /* SIDEBAR */
 #sidebar {
 	float:left;
@@ -125,7 +144,7 @@ footer{
 	color: #bf0413
 }
 
-#sidebar_stand, #sidebar_suche {
+#sidebar_stand, #sidebar_suche, #sidebar_doku {
 		border-top-style: groove;
 		border-bottom-style: groove;
 }
@@ -407,4 +426,9 @@ input.info_erweitern:checked + .anzeigen {
 	height:auto;
 	float:right;
 	margin:2%;
+}
+
+#farbpalette {
+  width: 100%;
+  height: auto;
 }
